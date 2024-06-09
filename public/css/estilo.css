@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald');
+
+@font-face {
+    font-family: 'SignPainter';
+    src: url('fonts/SignPainter-HouseScript.eot');
+    src: url('fonts/SignPainter-HouseScript.eot?#iefix') format('embedded-opentype'),
+        url('fonts/SignPainter-HouseScript.woff2') format('woff2'),
+        url('fonts/SignPainter-HouseScript.woff') format('woff'),
+        url('fonts/SignPainter-HouseScript.ttf') format('truetype'),
+        url('fonts/SignPainter-HouseScript.svg#SignPainter-HouseScript') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;  
+}
+
+/* Estilo geral do corpo */
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: #f3f5f9;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif; /* Aplicação da fonte Open Sans */
+}
+
+/* Estilo para links */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilo da Navbar */
+
+.navbar.bg-body-tertiary {
+    padding: 0;
+    background-color: rgb(233, 80, 14) !important;
+}
+#nav-logo {
+    color: white;
+    font-weight: 700;
+}
+#nav-txt {
+    color: white;
+    font-weight: 500;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif; 
+}
+#nav-txt:hover {
+    color: black;
+    font-weight: 500;
+}
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 60px;
+    text-align: right;
+}
+.nav {
+    background-color: white;
+    padding: 10px;
+}
+.nav-item a {
+    color: #000;
+    justify-content: center;
+    font-weight: 600;
+}
+.nav-item a:hover {
+    color: rgb(233, 80, 14) !important;
+}
+.nav-links {
+	display: flex;
+	justify-content: space-between; 
+	align-items: center; 
+}
+.nav-link {
+  margin-right: 20px; 
+  font-size: 1.1em; 
+}
+.align-middle {
+  vertical-align: text-top; 
+  margin-top: -4px; 
+}
+.nav-link a {
+  text-decoration: none; 
+}
+
+/* Estilo Cards */
+.card {
+	margin-top: 20px; 
+	width: 560px;
+	margin-left: 30px;
+}
+.card img {
+	height: 200px; 
+	object-fit: cover; 
+}
+/* Estilo do Footer */
+#footer {
+	margin-top: 20px;
+    position: relative;
+    background-image: url(../images/footer/footer-background.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+    padding: 50px 0;
+    text-align: center;
+    border-top: 5px solid rgb(255, 75, 0);
+}
+#footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.container {
+    position: relative;
+    z-index: 1;
+}
+.footer-line {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#btn {
+    background-color: rgb(255, 75, 0);
+    border: none; /* Remove as bordas */
+    border-radius: 10px; /* Define as bordas arredondadas */
+    padding: 10px 20px; /* Adiciona um preenchimento interno */
+    margin-top: 20px; /* Define a distância do topo */
+    margin-left: 20px;
+    font-weight: 600;
+    color: #FFF;
+}
+#btn:hover{
+    color: #000;
+}
